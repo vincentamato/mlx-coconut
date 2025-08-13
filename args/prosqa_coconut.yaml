@@ -1,0 +1,32 @@
+project: coconut
+save_path: PATH_TO_SAVE_THE_MODEL
+name: prosqa-coconut
+
+only_eval: False
+
+coconut: True
+cot: False
+no_thoughts: False
+no_cot: False
+
+c_thought: 1
+epochs_per_stage: 5
+max_latent_stage: 6
+pad_latent_to_max: True
+
+save_only_improve: False
+uniform_prob: 0.0
+load_model_path: None
+model_config_path: PATH_TO_GPT2_CONFIG
+seed: 0
+resume: 0
+bf16: False
+train_path: data/prosqa_train.json
+val_path: data/prosqa_valid.json
+reset_optimizer: True
+batch_size_training: 32
+debug: False
+gradient_accumulation_steps: 1
+num_epochs: 50
+lr: !!float "1e-4"
+weight_decay: 0.01

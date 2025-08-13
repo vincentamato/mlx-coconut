@@ -1,0 +1,32 @@
+project: coconut
+save_path: PATH_TO_SAVE_THE_MODEL
+name: gsm-cot
+
+only_eval: False
+
+coconut: False
+cot: True
+no_thoughts: False
+no_cot: False
+
+c_thought: 0
+epochs_per_stage: 1
+max_latent_stage: 0
+pad_latent_to_max: True
+
+save_only_improve: True
+uniform_prob: 0.0
+load_model_path: PATH_TO_COT_CHECKPOINT
+model_config_path: PATH_TO_GPT2_CONFIG
+seed: 0
+resume: 0
+bf16: False
+train_path: data/gsm_train.json
+val_path: data/gsm_valid.json
+reset_optimizer: False
+batch_size_training: 4
+debug: False
+gradient_accumulation_steps: 32
+num_epochs: 25
+lr: 0.0001
+weight_decay: 0.01
