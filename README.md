@@ -91,7 +91,7 @@ python run.py PATH_TO_ARGS
 
 ## Reproducing Experiments
 
-Here I provide instructions to reproduce the experiments in the paper. Due to training dynamics with MLX and Apple Silicon, results may not be exact to the paper. The MLX-friendly base GPT-2 model and configuration file can be found [here](https://huggingface.co/vincentamato/mlx-coconut/tree/maint). For results that closely align with those reported in the paper, a high-performance Apple Silicon chip is recommended.
+Here I provide instructions to reproduce the experiments in the paper. Due to training dynamics with MLX and Apple Silicon, results may not be exact to the paper. The MLX-friendly base GPT-2 model and configuration file can be found [here](https://huggingface.co/vincentamato/mlx-coconut/tree/main). For results that closely align with those reported in the paper, a high-performance Apple Silicon chip is recommended.
 
 ### GSM8K
 
